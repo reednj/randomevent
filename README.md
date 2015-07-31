@@ -1,5 +1,26 @@
-# Randomevent
+# RandomEvent
 
+RandomEvent is a DSL that makes it easy to create a set of blocks such that a single one in the set will be executed, based off the probability assigned to each one.
+
+Example:
+
+	# half of the time it will output hello, 25% of the time goodbye
+	# and 25 % of the time the default will be executed
+	RandomEvent.new do |r|
+		r.chance 0.50 do
+			puts 'hello'
+		end
+
+		r.chance 0.25 do
+			puts 'goodbye'
+		end
+
+		# this is optional, there is no need to have a default case
+		# if it is not requried
+		r.chance :else do
+			puts '-'
+		end
+	end
 
 ## Installation
 
@@ -16,10 +37,6 @@ And then execute:
 Or install it yourself as:
 
     $ gem install randomevent
-
-## Usage
-
-
 
 ## Development
 
