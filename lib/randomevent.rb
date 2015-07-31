@@ -11,7 +11,7 @@ require "randomevent/version"
 #
 #   # half of the time it will output hello, 25% of the time goodbye
 #   # and 25 % of the time the default will be executed
-#	Randomizer.new do |r|
+#	RandomEvent.new do |r|
 #		r.chance 0.5 do
 #			puts 'hello'
 #		end
