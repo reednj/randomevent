@@ -9,7 +9,7 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Nathan Reed"]
   spec.email         = ["reednj@gmail.com"]
 
-  spec.summary       = %q{A Gem to execute a block from a set based on a certain probability}
+  spec.summary       = %q{A Gem to conditionally execute a block based on a certain probability}
   spec.homepage      = "http://github.com/reednj/randomevent"
   spec.license       = "MIT"
 
